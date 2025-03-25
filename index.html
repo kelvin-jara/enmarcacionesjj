@@ -9,23 +9,32 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #A35454;
-            color: white;
+            background-color: #FFFFFF; /* Changed to white */
+            color: #333333; /* Dark gray text for contrast on white background */
             text-align: center;
         }
         
         header {
-            background: #A35454;
+            background: #FFFFFF; /* Matches body background */
             padding: 80px 20px;
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Lighter shadow for white background */
         }
 
         .title {
-            font-size: 3.5em;
+            font-size: 7em; /* Doubled from 3.5em to 7em */
             font-weight: bold;
             margin: 0;
             text-transform: uppercase;
             transition: transform 0.3s;
+            line-height: 1; /* Adjusts spacing between lines */
+        }
+
+        .title-top {
+            display: block; /* Puts "J&J" on its own line */
+        }
+
+        .title-bottom {
+            display: block; /* Puts "ENMARCACIONES" below */
         }
 
         .title:hover {
@@ -36,12 +45,14 @@
             font-size: 1.8em;
             font-weight: bold;
             margin: 10px 0;
+            color: #333333; /* Matches body text color */
         }
 
         .phrase {
             font-size: 1.4em;
             font-style: italic;
             margin-top: 5px;
+            color: #333333; /* Matches body text color */
         }
 
         .content {
@@ -49,17 +60,17 @@
             max-width: 800px;
             margin: 0 auto;
             text-align: left;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(0, 0, 0, 0.05); /* Light gray background for contrast */
             border-radius: 10px;
         }
 
         .content h2 {
-            color: white;
+            color: #333333; /* Matches body text color */
         }
 
         .content p {
             font-size: 1.2em;
-            color: white;
+            color: #333333; /* Matches body text color */
             line-height: 1.5;
         }
 
@@ -100,22 +111,21 @@
             background-color: #C0275C;
         }
 
-        /* New image section styles */
         .image-section {
             padding: 20px;
             text-align: center;
         }
 
         .image-section img {
-            max-width: 100%; /* Ensures the image scales responsively */
+            max-width: 100%;
             height: auto;
-            border-radius: 10px; /* Matches the content section's rounded corners */
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
         }
 
         @media (max-width: 600px) {
             .title {
-                font-size: 2.5em;
+                font-size: 5em; /* Adjusted for smaller screens */
             }
             .subtitle {
                 font-size: 1.5em;
@@ -132,7 +142,10 @@
 </head>
 <body>
     <header role="banner">
-        <h1 class="title">J&J ENMARCACIONES</h1>
+        <h1 class="title">
+            <span class="title-top">J&J</span>
+            <span class="title-bottom">ENMARCACIONES</span>
+        </h1>
         <h2 class="subtitle">20 AÑOS DE EXPERIENCIA</h2>
         <p class="phrase">Realzamos tu arte y recuerdos</p>
     </header>
@@ -152,10 +165,8 @@
         </div>
     </section>
 
-    <!-- New image section -->
     <section class="image-section">
         <img src="art.jpg" alt="Ejemplo de enmarcación J&J">
     </section>
-
 </body>
 </html>
