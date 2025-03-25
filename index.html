@@ -30,14 +30,6 @@
             line-height: 1;
         }
 
-        .title-top {
-            display: block;
-        }
-
-        .title-bottom {
-            display: block;
-        }
-
         .title:hover {
             transform: scale(1.05);
         }
@@ -76,9 +68,9 @@
         }
 
         .buttons {
-            display: flex; /* Align buttons side by side */
-            justify-content: center; /* Center horizontally */
-            gap: 15px; /* Space between buttons */
+            display: flex;
+            justify-content: center;
+            gap: 15px;
             margin-top: 20px;
         }
         
@@ -90,9 +82,9 @@
             border-radius: 8px;
             font-weight: bold;
             transition: background-color 0.3s, transform 0.2s;
-            display: flex; /* Keep Flexbox for content alignment */
-            align-items: center; /* Center vertically within button */
-            gap: 8px; /* Space between image/icon and text */
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
         
         .social-button:hover {
@@ -115,13 +107,6 @@
             background-color: #C0275C;
         }
 
-        /* Styling for social media icons */
-        .social-icon {
-            width: 24px; /* Fixed width for consistency */
-            height: 24px; /* Fixed height */
-            vertical-align: middle; /* Aligns with text */
-        }
-
         .image-section {
             padding: 20px;
             text-align: center;
@@ -132,6 +117,21 @@
             height: auto;
             border-radius: 10px;
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .address-section {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .address-section a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .address-section a:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 600px) {
@@ -148,35 +148,31 @@
                 font-size: 1em;
                 padding: 10px 15px;
             }
-            .social-icon {
-                width: 20px; /* Slightly smaller on mobile */
-                height: 20px;
-            }
         }
     </style>
 </head>
 <body>
     <header role="banner">
-        <h1 class="title">
-            <span class="title-top">J&J</span>
-            <span class="title-bottom">ENMARCACIONES</span>
-        </h1>
+        <h1 class="title">J&J<br>ENMARCACIONES</h1>
         <h2 class="subtitle">20 AÑOS DE EXPERIENCIA</h2>
         <p class="phrase">Realzamos tu arte y recuerdos</p>
     </header>
 
     <section class="content">
         <h2>Enmarcaciones J&J – Realzamos tu arte y recuerdos</h2>
-        <p>En <strong>Enmarcaciones J&J</strong>, nos especializamos en la fabricación de marcos a medida para cuadros, fotografías y obras de arte. 
-        Con un trabajo meticuloso y materiales de alta calidad, creamos marcos que protegen y embellecen tus piezas, dándoles el realce que merecen.</p>
+        <p>En <strong>Enmarcaciones J&J</strong>, nos especializamos en la fabricación de marcos a medida para cuadros, fotografías y obras de arte. Con un trabajo meticuloso y materiales de alta calidad, creamos marcos que protegen y embellecen tus piezas, dándoles el realce que merecen.</p>
 
         <p>📌 <strong>Personalización Total</strong> – Diseñamos marcos en diferentes estilos, colores y materiales para que se adapten a tu espacio y gusto.</p>
         <p>🖼️ <strong>Para Todo Tipo de Arte</strong> – Cuadros, fotos, diplomas, lienzos y más, enmarcamos con precisión y detalle.</p>
         <p>💯 <strong>Calidad y Durabilidad</strong> – Usamos materiales de primera para asegurar que tus recuerdos perduren con elegancia.</p>
 
-       <div class="buttons">
+        <div class="buttons">
             <a class="social-button whatsapp-button" href="https://wa.me/593961461424" target="_blank">📩 Enviar Mensaje +593 96 146 1424</a>
             <a class="social-button instagram-button" href="https://www.instagram.com/enmarcacionesjj/" target="_blank">📷 Síguenos en Instagram</a>
+        </div>
+
+        <div class="address-section">
+            📍 Dirección: <a href="https://maps.app.goo.gl/en416Gv3zmGWibvv8" target="_blank">Antonio de Ulloa 2198, Quito 170147, Ecuador</a>
         </div>
     </section>
 
