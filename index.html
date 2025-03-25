@@ -9,32 +9,32 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FFFFFF; /* Changed to white */
-            color: #333333; /* Dark gray text for contrast on white background */
+            background-color: #FFFFFF;
+            color: #333333;
             text-align: center;
         }
         
         header {
-            background: #FFFFFF; /* Matches body background */
+            background: #FFFFFF;
             padding: 80px 20px;
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Lighter shadow for white background */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
         }
 
         .title {
-            font-size: 7em; /* Doubled from 3.5em to 7em */
+            font-size: 7em;
             font-weight: bold;
             margin: 0;
             text-transform: uppercase;
             transition: transform 0.3s;
-            line-height: 1; /* Adjusts spacing between lines */
+            line-height: 1;
         }
 
         .title-top {
-            display: block; /* Puts "J&J" on its own line */
+            display: block;
         }
 
         .title-bottom {
-            display: block; /* Puts "ENMARCACIONES" below */
+            display: block;
         }
 
         .title:hover {
@@ -45,14 +45,14 @@
             font-size: 1.8em;
             font-weight: bold;
             margin: 10px 0;
-            color: #333333; /* Matches body text color */
+            color: #333333;
         }
 
         .phrase {
             font-size: 1.4em;
             font-style: italic;
             margin-top: 5px;
-            color: #333333; /* Matches body text color */
+            color: #333333;
         }
 
         .content {
@@ -60,17 +60,17 @@
             max-width: 800px;
             margin: 0 auto;
             text-align: left;
-            background-color: rgba(0, 0, 0, 0.05); /* Light gray background for contrast */
+            background-color: rgba(0, 0, 0, 0.05);
             border-radius: 10px;
         }
 
         .content h2 {
-            color: #333333; /* Matches body text color */
+            color: #333333;
         }
 
         .content p {
             font-size: 1.2em;
-            color: #333333; /* Matches body text color */
+            color: #333333;
             line-height: 1.5;
         }
 
@@ -89,6 +89,9 @@
             border-radius: 8px;
             font-weight: bold;
             transition: background-color 0.3s, transform 0.2s;
+            display: flex; /* Flexbox for aligning image and text */
+            align-items: center; /* Vertically center content */
+            gap: 8px; /* Space between image and text */
         }
 
         .social-button:hover {
@@ -111,6 +114,13 @@
             background-color: #C0275C;
         }
 
+        /* Styling for social media icons */
+        .social-icon {
+            width: 24px; /* Fixed width for consistency */
+            height: 24px; /* Fixed height */
+            vertical-align: middle; /* Aligns with text */
+        }
+
         .image-section {
             padding: 20px;
             text-align: center;
@@ -125,7 +135,7 @@
 
         @media (max-width: 600px) {
             .title {
-                font-size: 5em; /* Adjusted for smaller screens */
+                font-size: 5em;
             }
             .subtitle {
                 font-size: 1.5em;
@@ -136,6 +146,10 @@
             .social-button {
                 font-size: 1em;
                 padding: 10px 15px;
+            }
+            .social-icon {
+                width: 20px; /* Slightly smaller on mobile */
+                height: 20px;
             }
         }
     </style>
@@ -160,8 +174,12 @@
         <p>💯 <strong>Calidad y Durabilidad</strong> – Usamos materiales de primera para asegurar que tus recuerdos perduren con elegancia.</p>
 
         <div class="buttons">
-            <a class="social-button whatsapp-button" href="https://wa.me/593961461424" target="_blank">📩 Enviar Mensaje +593 96 146 1424</a>
-            <a class="social-button instagram-button" href="https://www.instagram.com/enmarcacionesjj/" target="_blank">📷 Síguenos en Instagram</a>
+            <a class="social-button whatsapp-button" href="https://wa.me/593961461424" target="_blank">
+                <img src="whatsapplogo.png" alt="WhatsApp Logo" class="social-icon"> Enviar Mensaje +593 96 146 1424
+            </a>
+            <a class="social-button instagram-button" href="https://www.instagram.com/enmarcacionesjj/" target="_blank">
+                <img src="instagramlogo.jpg" alt="Instagram Logo" class="social-icon"> Síguenos en Instagram
+            </a>
         </div>
     </section>
 
